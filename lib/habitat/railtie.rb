@@ -7,7 +7,7 @@ module Habitat
       heroku_config = `heroku config --long`
       heroku_config = heroku_config.split("\n").map{|string| string.split("=>").map(&:strip)}
       heroku_config.each do |conf|
-        ENV[conf.first] = conf.last
+        ENV[conf.first] = conf.last unless conf.first == "RACK_ENV"
       end
     end
   end
