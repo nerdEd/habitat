@@ -1,6 +1,14 @@
-= habitat
+= Habitat
 
 Rails 3 plugin that automatically loads heroku config variables into your development environment
+
+== Usage
+
+In your Gemfile
+
+  group :development do
+    gem 'habitat'
+  end
 
 == Note on Patches/Pull Requests
  
