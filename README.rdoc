@@ -1,6 +1,6 @@
 = habitat
 
-Description goes here.
+Rails 3 plugin that automatically loads heroku config variables into your development environment
 
 == Note on Patches/Pull Requests
  
