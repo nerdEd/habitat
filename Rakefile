@@ -10,6 +10,7 @@ begin
     gem.email = "Jonas714@gmail.com"
     gem.homepage = "http://github.com/nerdEd/habitat"
     gem.authors = ["Ed Schmalzle"]
+    gem.add_dependency('heroku', '>= 1.8.3')
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError

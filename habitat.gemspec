@@ -23,7 +23,9 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
-     "lib/habitat.rb"
+     "habitat.gemspec",
+     "lib/habitat.rb",
+     "lib/habitat/railtie.rb"
   ]
   s.homepage = %q{http://github.com/nerdEd/habitat}
   s.rdoc_options = ["--charset=UTF-8"]
@@ -36,9 +38,12 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<heroku>, [">= 1.8.3"])
     else
+      s.add_dependency(%q<heroku>, [">= 1.8.3"])
     end
   else
+    s.add_dependency(%q<heroku>, [">= 1.8.3"])
   end
 end
 
