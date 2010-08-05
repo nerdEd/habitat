@@ -10,6 +10,12 @@ In your Gemfile:
     gem 'habitat'
   end
 
+To override values from heroku config create a habitat.yml file in config
+
+Sample config/habitat.yml:
+
+  TWITTER_KEY: differentkeythanproduction
+
 == Note on Patches/Pull Requests
  
 * Fork the project.
