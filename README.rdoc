@@ -2,6 +2,15 @@
 
 Rails 3 plugin that automatically loads heroku config variables into your development environment
 
+== Disclaimer
+
+I've only tested habitat within the confines of my own (narrow) use case.
+
+So here are some things I haven't tried but think will break:
+
+* Using habitat on a machine without the heroku gem setup with your credentials
+* Using habitat when not the owner of the heroku app
+
 == Usage
 
 In your Gemfile:
